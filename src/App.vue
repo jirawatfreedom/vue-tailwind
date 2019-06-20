@@ -1,29 +1,25 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div id="app" class="bg-gray-200 antialiased">
+    <header class="bg-gray-900">
+    </header>
+    <section class="bg-gray-800">
+      <input type="text" value="" name="" id="" placeholder="Search by keyword"/>  
+      <button>Filters</button>
+    </section>
+    <main>
+
+      <h3>Los Angeles</h3>
+      <p>Live like the stars in these luxurious Southern California estates.</p>
+    </main>
     <router-view/>
   </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script charset="utf-8">
+export default {
+  name: 'app',
+  components:{}
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+</script>
+<style type="text/css" src="./assets/css/tailwind.css">
+  
 </style>
